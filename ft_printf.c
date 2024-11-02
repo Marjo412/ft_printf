@@ -20,9 +20,9 @@ int ft_printf(const char *format, ...)
     while (*format != '\0')
     {
     if (*format == '%')
-        format++;
+        ft_print_char('%');
     else if (*format == 'c')
-    {}
+        ft_print_char(va_list(args, int));
     else if (*format == 's')
     {}
     else if (*format == 'p')
@@ -37,7 +37,6 @@ int ft_printf(const char *format, ...)
     {}
     else if (*format == 'X')
     {}
-    else if (*format == '%%')
     }
 va_end(args);
 }
