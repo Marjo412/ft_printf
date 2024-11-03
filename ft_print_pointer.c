@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_string.c                                  :+:      :+:    :+:   */
+/*   ft_print_pointer.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 10:41:56 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/03 13:26:12 by mrosset          ###   ########.fr       */
+/*   Created: 2024/11/03 10:53:37 by mrosset           #+#    #+#             */
+/*   Updated: 2024/11/03 16:48:00 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_string(const char *str)
+int	ft_print_pointer(void *ptr)
 {
-	int	i;
+	int	count;
 
-	i = 0;
-	if (str == NULL)
-		return (NULL);
-	while (str[i] != '\0')
-	{
-		write (1, &str[i], 1);
-		i++;
-	}
-	return (i);
+	count = ft_print_string("0x");
+	count += ft_print_hexa(ptr, 'x');
+	return (count);
 }
