@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 11:05:56 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/03 16:53:40 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/08 09:47:49 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ int	ft_print_decimal(int n);
 int	ft_print_hexa(unsigned int n, char c);
 int	ft_print_pointer(void *ptr);
 int	ft_print_string(const char *str);
-int	ft_print_unsigned(unsigned int n);
+int	ft_print_unsigned(unsigned long n);
 
 #endif

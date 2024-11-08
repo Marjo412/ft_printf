@@ -6,13 +6,13 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:53:41 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/03 16:51:59 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/08 09:53:58 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_un_len(unsigned int n)
+size_t	ft_un_len(unsigned long n)
 {
 	size_t	len;
 
@@ -27,7 +27,7 @@ size_t	ft_un_len(unsigned int n)
 	return (len);
 }
 
-char	*unsigned_itoa(unsigned int n)
+char	*unsigned_itoa(unsigned long n)
 {
 	char	*dest;
 	size_t	len;
@@ -36,6 +36,7 @@ char	*unsigned_itoa(unsigned int n)
 	dest = (char *)malloc(sizeof(char) * (len + 1));
 	if (dest == NULL)
 		return (NULL);
+	dest[len] = '\0';
 	if (n == 0)
 		dest[0] = '0';
 	while (n != 0)
@@ -46,12 +47,14 @@ char	*unsigned_itoa(unsigned int n)
 	return (dest);
 }
 
-int	ft_print_unsigned(unsigned int n)
+int	ft_print_unsigned(unsigned long n)
 {
-	char	*s;
-	int		count;
+	char			*s;
+	unsigned long	count;
 
 	s = unsigned_itoa(n);
+	if (s == NULL)
+		return (0);
 	count = ft_print_string(s);
 	free(s);
 	s = NULL;

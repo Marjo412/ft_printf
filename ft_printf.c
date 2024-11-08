@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 09:44:48 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/03 17:07:42 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/08 10:22:31 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,14 @@ int	ft_printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			count += ft_converstion(args, format[i]);
 			i++;
+			count += ft_converstion(args, format[i]);
 		}
+		else
+		{
+			count += ft_print_char(format[i]);
+		}
+		i++;
 	}
 	va_end(args);
 	return (count);

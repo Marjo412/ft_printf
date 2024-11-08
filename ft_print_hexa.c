@@ -6,40 +6,34 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:53:34 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/03 17:10:46 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/08 09:35:09 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putchar(char c)
+/*int	ft_putnbr(unsigned int n)
 {
-	write (1, &c, 1);
-}
+	int	count;
 
-void	ft_putnbr(int n)
-{
-	if (n == -2147483648)
-	{
-		write (1, "-2147483648", 11);
-		return ;
-	}
+	count = 0;
 	if (n < 0)
 	{
-		ft_putchar('-');
+		count += write(1, "-", 1);
 		n *= -1;
 	}
-	if (n < 10)
+	if (n < 16)
 	{
-		ft_putchar(n + '0');
-		return ;
+		count += write(1, "n + '0'", 1);
+		return (count);
 	}
 	else
 	{
 		ft_putnbr(n / 16);
 		ft_putnbr(n % 16);
 	}
-}
+	return (count);
+}*/
 
 int	ft_print_hexa(unsigned int n, char c)
 {
@@ -52,6 +46,8 @@ int	ft_print_hexa(unsigned int n, char c)
 		base = HEXA_BASE_UPPER;
 	else if (c == 'x')
 		base = HEXA_BASE_LOWER;
-	count += ft_putnbr(n);
+	if (n >= 16)
+		count += ft_print_hexa(n / 16, c);
+	count += write(1, &base[n % 16], 1);
 	return (count);
 }
