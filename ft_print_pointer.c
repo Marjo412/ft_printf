@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:53:37 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/06 11:02:38 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:57:36 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int	ft_print_pointer(void *ptr)
 	return (count);
 }
 
-/*0x : prefixe de l'adresse*/
-/*utilisation d'un unsigned long pour permettre de capturer l'adresse 
-complète du pointeur.*/
-/* ligne 26 : appel a la recursion pour afficher l'entier en hexadecimal*/
+/* 0x : address prefix
+use unsigned long to allow capturing the full address of the pointer.
+line 26 : call the recursion to display the integer in hexadecimal*/

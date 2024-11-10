@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:41:56 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/08 10:14:38 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:52:14 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,4 @@ int	ft_print_string(const char *str)
 	return (i);
 }
 
-/*si la str est null, write (null) si write (null) echoue retourne -1*/
+/*if the string is null : write (null) if write (null) failed return -1*/

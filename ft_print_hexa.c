@@ -6,34 +6,11 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:53:34 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/08 09:35:09 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:52:40 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-/*int	ft_putnbr(unsigned int n)
-{
-	int	count;
-
-	count = 0;
-	if (n < 0)
-	{
-		count += write(1, "-", 1);
-		n *= -1;
-	}
-	if (n < 16)
-	{
-		count += write(1, "n + '0'", 1);
-		return (count);
-	}
-	else
-	{
-		ft_putnbr(n / 16);
-		ft_putnbr(n % 16);
-	}
-	return (count);
-}*/
 
 int	ft_print_hexa(unsigned int n, char c)
 {
