@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:53:34 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/10 10:52:40 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/10 11:15:43 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,7 @@ int	ft_print_hexa(unsigned int n, char c)
 	count += write(1, &base[n % 16], 1);
 	return (count);
 }
+
+/*Function fo %x and %X
+I define HEXA_BASE_UPPER and HEXA_BASE_LOWER in ft_printf.h
+Change in base 16 for the hexadecimal*/

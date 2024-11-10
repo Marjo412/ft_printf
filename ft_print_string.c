@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:41:56 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/10 10:52:14 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/10 11:09:58 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,5 @@ int	ft_print_string(const char *str)
 	return (i);
 }
 
-/*if the string is null : write (null) if write (null) failed return -1*/
+/*function for print a string, return the nb of byte print. 
+If the string is null : write (null) if write (null) failed return -1*/

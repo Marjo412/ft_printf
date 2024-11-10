@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:53:41 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/08 09:53:58 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/10 11:08:25 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,3 +60,6 @@ int	ft_print_unsigned(unsigned long n)
 	s = NULL;
 	return (count);
 }
+
+/*functions made for %u
+with unsigned_itoa change an unsigned int in a string */

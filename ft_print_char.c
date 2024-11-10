@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:00:35 by mrosset           #+#    #+#             */
-/*   Updated: 2024/10/31 10:36:20 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/10 11:16:11 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,5 @@ int	ft_print_char(char c)
 {
 	return (write(1, &c, 1));
 }
+
+/* Function for print a char (%c)*/

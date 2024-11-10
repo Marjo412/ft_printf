@@ -6,7 +6,7 @@
 /*   By: mrosset <mrosset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:53:30 by mrosset           #+#    #+#             */
-/*   Updated: 2024/11/03 13:24:44 by mrosset          ###   ########.fr       */
+/*   Updated: 2024/11/10 11:11:44 by mrosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,3 +90,7 @@ int	ft_print_decimal(int n)
 	s = NULL;
 	return (count);
 }
+
+/*Functions for %d and %i
+With itoa change an integer in a string
+I didn't unse my libft for practice the function itoa*/
